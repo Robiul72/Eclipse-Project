@@ -10,28 +10,28 @@ public class Student {
     private String gender;
     private String dateOfBirth;
     private String email;
-    private String phoneNumber;
+    private String contact;
 
     public Student() {
     }
 
-    public Student(int id, String firstName, String lastName, String gender, String dateOfBirth, String email, String phoneNumber) {
+    public Student(int id, String firstName, String lastName, String gender, String dateOfBirth, String email, String contact) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
         this.dateOfBirth = dateOfBirth;
         this.email = email;
-        this.phoneNumber = phoneNumber;
+        this.contact = contact;
     }
 
-    public Student(String firstName, String lastName, String gender, String dateOfBirth, String email, String phoneNumber) {
+    public Student(String firstName, String lastName, String gender, String dateOfBirth, String email, String contact) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
         this.dateOfBirth = dateOfBirth;
         this.email = email;
-        this.phoneNumber = phoneNumber;
+        this.contact = contact;
     }
 
     public int getId() {
@@ -82,17 +82,17 @@ public class Student {
         this.email = email;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getContact() {
+        return contact;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setContact(String contact) {
+        this.contact = contact;
     }
 
     @Override
     public String toString() {
-        return "Student{" + "id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", gender=" + gender + ", dateOfBirth=" + dateOfBirth + ", email=" + email + ", phoneNumber=" + phoneNumber + '}';
+        return "Student{" + "id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", gender=" + gender + ", dateOfBirth=" + dateOfBirth + ", email=" + email + ", contact=" + contact + '}';
     }
     
     

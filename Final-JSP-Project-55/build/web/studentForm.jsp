@@ -11,7 +11,7 @@
 
 <!-- Form start-->
 
-    <form style="background-color: beige">
+<form action="studentAllView.jsp" method="post" style="background-color: beige">
 
 <!-- 1st row start   -->
         <div class="row ">
@@ -57,7 +57,7 @@
 <div class="row mt-3">
     <div class="col-md-6">
         <label><h3 class="ms-2"> Email No : </h3></label>
-        <input type="text" class="form-control ms-2" name="emailNo" id="emailNo" placeholder=" jonh@email.com"/>
+        <input type="text" class="form-control ms-2" name="emailNo" id="email" placeholder=" jonh@email.com"/>
     </div>
     
     <div class="col-md-6">

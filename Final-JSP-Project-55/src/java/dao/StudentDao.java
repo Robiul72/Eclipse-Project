@@ -18,7 +18,7 @@ public class StudentDao {
     public static int saveStudent(Student s) throws ClassNotFoundException, SQLException {
 
         int status = 0;
-        String sql="insert into newstudent (firstName, lastName, gender, dateOfBirth, email, phoneNumber)"
+        String sql="insert into newstudent (firstName, lastName, gender, dateOfBirth, email, contact)"
                 + " values (?,?,?,?,?,?)";
         
         PreparedStatement ps = DbCon.getCon().prepareStatement(sql);
@@ -28,7 +28,7 @@ public class StudentDao {
         ps.setString(3, s.getGender());
         ps.setString(4, s.getDateOfBirth());
         ps.setString(5, s.getEmail());
-        ps.setString(6, s.getPhoneNumber());
+        ps.setString(6, s.getContact());
         
         status= ps.executeUpdate();
         
@@ -42,7 +42,7 @@ public class StudentDao {
     
         List<Student> list=new ArrayList<Student>();
         
-        String sql="select * newStudent ";
+        String sql="select * from newStudent ";
         
         PreparedStatement ps = DbCon.getCon().prepareStatement(sql);
         
